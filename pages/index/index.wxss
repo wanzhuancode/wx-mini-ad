@@ -1,42 +1,187 @@
 .container {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f7ff;
 }
 
 .input-section {
   width: 100%;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 0 10px;
+  width: 85%;
+  height: 48px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  font-size: 15px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 2px 12px rgba(96, 165, 250, 0.1);
+}
+
+.error-message {
+  color: #f87171;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
 }
 
 .result-section {
-  width: 100%;
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 4px;
+  width: 85%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
-.result-text {
+.result-preview {
   display: block;
+  font-family: monospace;
   word-break: break-all;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  color: #3b82f6;
+  text-align: center;
+  background: rgba(243, 244, 246, 0.7);
+  padding: 12px;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.result-hint {
+  display: block;
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .copy-btn {
-  background: #07c160;
+  width: 70%;
+  background: #60a5fa;
   color: white;
+  border-radius: 6px;
+  margin-top: 12px;
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.notice {
-  width: 100%;
-  text-align: center;
-  color: #666;
-  margin: 10px 0;
+.copy-btn:active {
+  background: #3b82f6;
+  transform: translateY(1px);
+}
+
+.contact-card {
+  width: 90%;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.12);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.contact-info {
+  font-size: 16px;
+  margin-bottom: 8px;
+  opacity: 0.95;
+}
+
+.contact-way {
+  font-size: 15px;
+  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.key-hint {
+  width: 85%;
+  margin: 12px 0 20px;
+  color: #64748b;
   font-size: 14px;
+  text-align: center;
+}
+
+.contact-way-small {
+  margin-top: 4px;
+  color: #1890ff;
+  font-size: 14px;
+}
+
+.update-time {
+  width: 85%;
+  margin-bottom: 24px;
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.contact-buttons {
+  display: flex;
+  margin-top: 16px;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-btn {
+  width: 70%;
+  font-size: 15px;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: #3b82f6;
+  line-height: 1.5;
+  min-height: unset;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.contact-btn:active {
+  transform: translateY(1px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.copy-wx {
+  background: white;
+  color: #1890ff;
+}
+
+.add-friend {
+  border: 1px solid white;
 } 

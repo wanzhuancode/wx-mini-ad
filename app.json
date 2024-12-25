@@ -5,11 +5,13 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "IDEA激活码",
+    "navigationBarTitleText": "IDEA正版激活码",
     "navigationBarTextStyle": "black"
   },
   "permission": {
-    "scope.userLocation": false
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序位置接口的效果展示"
+    }
   },
   "requiredPrivateInfos": [],
   "debug": false,

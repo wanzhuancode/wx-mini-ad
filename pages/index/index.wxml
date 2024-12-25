@@ -1,4 +1,17 @@
 <view class="container">
+  <view class="contact-card">
+    <text class="contact-title">激活码失效？</text>
+    <text class="contact-info">联系程序员陈师兄</text>
+    <text user-select="true" class="contact-way">微信：wanzhuancode</text>
+    <view class="contact-buttons">
+      <button class="contact-btn copy-wx" bindtap="handleCopyWechat">复制微信号</button>
+    </view>
+  </view>
+
+  <view class="update-time">
+    <text>密钥更新时间：{{updateTime}}</text>
+  </view>
+
   <view class="input-section">
     <input class="input" 
            type="text" 
@@ -8,12 +21,17 @@
     />
   </view>
 
+  <view class="key-hint">
+    <text>密钥获取请联系程序员陈师兄</text>
+  </view>
+
   <view class="error-message" wx:if="{{errorMessage}}">
     <text>{{errorMessage}}</text>
   </view>
 
   <view class="result-section" wx:if="{{showResult}}">
-    <text class="result-text">{{activationCode}}</text>
+    <text class="result-preview">{{activationCodePreview}}...</text>
+    <text class="result-hint">点击下方按钮复制完整激活码</text>
     <button class="copy-btn" bindtap="handleCopy">复制激活码</button>
   </view>
 </view> 
