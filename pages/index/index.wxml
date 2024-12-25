@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="input-section">
+    <input class="input" 
+           type="text" 
+           placeholder="请输入密钥" 
+           bindinput="handleInput"
+           value="{{inputValue}}"
+    />
+  </view>
+
+  <view class="error-message" wx:if="{{errorMessage}}">
+    <text>{{errorMessage}}</text>
+  </view>
+
+  <view class="result-section" wx:if="{{showResult}}">
+    <text class="result-text">{{activationCode}}</text>
+    <button class="copy-btn" bindtap="handleCopy">复制激活码</button>
+  </view>
+</view> 

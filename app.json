@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "IDEA激活码",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": false
+  },
+  "requiredPrivateInfos": [],
+  "debug": false,
+  "resizable": false,
+  "navigateToMiniProgramAppIdList": []
+} 
